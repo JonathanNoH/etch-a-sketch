@@ -19,12 +19,12 @@ body {
     border: 5px solid black;
 }
 
-
+h1 {
+    margin: 15px 0 0 0;
+    padding: 0;
+}
 
 .hovered {
     background-color: bisque;
 }
 
-.reset {
-    margin-top: 15px;
-}
