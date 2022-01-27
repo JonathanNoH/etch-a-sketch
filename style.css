@@ -14,7 +14,7 @@ body {
     /*grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);*/
     
-    height: 90vh;
+    height: 85vh;
     aspect-ratio: 1;
     border: 5px solid black;
 }
