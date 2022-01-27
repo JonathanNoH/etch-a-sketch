@@ -5,7 +5,12 @@ function createGrid() {
         divs.push(document.createElement('div'));
         }
     }
+    divs.forEach(addClass);
     divs.forEach(appendContainer);
+}
+
+function addClass(item) {
+    item.classList.add('square');
 }
 
 function appendContainer(item) {
@@ -14,3 +19,11 @@ function appendContainer(item) {
 
 const container = document.querySelector(".container");
 createGrid();
+
+const conDivs = document.querySelectorAll(".square");
+
+conDivs.forEach(child => {
+    child.addEventListener('click', (e) => {
+        e.target.classList.add('hovered');
+    })
+})
