@@ -1,4 +1,5 @@
 function createGrid(size) {
+    if (size > 100) return;
     const divs = [];
     for (let i=0; i<size; i++) {
         for (let i=0; i<size; i++) {
@@ -24,9 +25,9 @@ function resetBoard() {
 const container = document.querySelector(".container");
 createGrid(16);
 
-const conDivs = document.querySelectorAll(".square");
+const squares = document.querySelectorAll(".square");
 
-conDivs.forEach(child => {
+squares.forEach(child => {
     child.addEventListener('mouseover', (e) => {
         e.target.classList.add('hovered');
     })
