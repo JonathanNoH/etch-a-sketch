@@ -1,5 +1,7 @@
 body {
     height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
 .container {
@@ -7,9 +9,12 @@ body {
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
     
-    height: 100vh;
+    height: 95vh;
+    aspect-ratio: 1;
+    
 }
 
 .container div {
     border: 1px solid black;
+    
 }
