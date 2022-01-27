@@ -1,7 +1,12 @@
 body {
     height: 100vh;
     display: flex;
-    justify-content: center;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+    
 }
 
 .container {
@@ -9,7 +14,7 @@ body {
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
     
-    height: 95vh;
+    height: 90vh;
     aspect-ratio: 1;
     
 }
@@ -21,4 +26,8 @@ body {
 
 .hovered {
     background-color: bisque;
+}
+
+.reset {
+    margin-top: 15px;
 }
