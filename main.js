@@ -23,7 +23,7 @@ createGrid();
 const conDivs = document.querySelectorAll(".square");
 
 conDivs.forEach(child => {
-    child.addEventListener('click', (e) => {
+    child.addEventListener('mouseover', (e) => {
         e.target.classList.add('hovered');
     })
 })
