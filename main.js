@@ -1,7 +1,7 @@
-function createGrid() {
+function createGrid(size) {
     const divs = [];
-    for (let i=0; i<16; i++) {
-        for (let i=0; i<16; i++) {
+    for (let i=0; i<size; i++) {
+        for (let i=0; i<size; i++) {
         divs.push(document.createElement('div'));
         }
     }
@@ -17,8 +17,12 @@ function appendContainer(item) {
     container.appendChild(item);
 }
 
+function resetBoard() {
+    return;
+}
+
 const container = document.querySelector(".container");
-createGrid();
+createGrid(16);
 
 const conDivs = document.querySelectorAll(".square");
 
@@ -27,3 +31,7 @@ conDivs.forEach(child => {
         e.target.classList.add('hovered');
     })
 })
+
+const resetButton = document.querySelector(".reset");
+
+resetButton.addEventListener('click', resetBoard);
