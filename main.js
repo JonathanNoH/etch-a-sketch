@@ -1,5 +1,7 @@
 function createGrid(size) {
     const divs = [];
+    container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+    container.style.gridTemplateRows = `repeat(${size}, 1fr)`;
     for (let i=0; i<size; i++) {
         for (let i=0; i<size; i++) {
         divs.push(document.createElement('div'));
