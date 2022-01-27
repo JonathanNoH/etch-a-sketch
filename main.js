@@ -21,10 +21,10 @@ function appendContainer(item) {
 
 function resetBoard() {
     let userSize = prompt("Enter a size for new board. (Must be less than 100)", "");
-    if (userSize === null) {
-        return;
-    }
     while (!(userSize > 0 && userSize <= 100)) {
+        if (userSize === null) {
+            return;
+        }
         userSize = prompt("Error. Please enter a number between 0 and 100.", "")
     }
     let squares = document.querySelectorAll(".square");
